@@ -1,0 +1,31 @@
+version: '3.1'
+
+services:
+
+  scrapy:
+    build:
+      context: ./scrapy
+      dockerfile: Dockerfile
+
+    working_dir: /usr/src/app
+    restart: no
+    tty: true
+    stdin_open: true
+
+    volumes:
+      - ./scrapy:/usr/src/app
+
+    environment:
+      FOO: bar
+
+    networks:
+      - global
+
+    ports:
+      - 5001:5000
+      - 4000:4000
+
+
+networks:
+  global:
+
