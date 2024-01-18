@@ -21,7 +21,7 @@ Kolejne moduły zostaną dodane wraz z postępem prac.
 W pliku `/scrapy/assets/models.json` znajdują się linki do sekcji forum, w których znajdują się wątki dotyczące
 konkretnego modelu Forda. To repozytorium zawiera link tylko do jednego modelu. Jeśli chcesz pobrać wszystkie wątki
 przypisane do wszystkich modeli, musisz uzupełnić ten plik. Więcej o tym jak to zrobić znajdziesz tym
-filmie: [https://youtu.be/uGTLIF0exWI?t=60](https://youtu.be/uGTLIF0exWI?t=60)
+filmie: [https://youtu.be/H46cg0sQMUk](https://youtu.be/H46cg0sQMUk)
 
 
 ## Uruchomienie
