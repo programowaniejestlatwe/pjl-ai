@@ -3,6 +3,8 @@ import logging
 import json
 import scrapy
 
+from forumford.db import Db
+
 class ThreadsSpider(scrapy.Spider):
     # wymagane przez Scrapy
     name = "threads"
@@ -43,6 +45,7 @@ class ThreadsSpider(scrapy.Spider):
     # dla każdej strony z linku czyli zawiera listę wątków dla danej sekcji (modelu)
     def parse(self, response, source):
 
+        db = Db()
         logging.info("Przetwarzam: %s", source)
 
         # pobieramy wszystkie linki do wątków
@@ -78,12 +81,12 @@ class ThreadsSpider(scrapy.Spider):
                 "model": source['model'],
                 "link": link.css("::attr(href)").get(default="").strip(),
                 "title": link.css("::text").get(default="").strip(),
-                "brand": "ford"
+                "brand": "ford",
+                "source": "forumford"
             }
 
             logging.info("Dodaję wątek: %s", thread)
-
-
+            db.insert_thread(thread)
 
         # pobieramy link do następnej strony
         pagination_links = response.css("a[rel='next']")

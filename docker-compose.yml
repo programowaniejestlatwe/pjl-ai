@@ -25,6 +25,31 @@ services:
       - 5001:5000
       - 4000:4000
 
+  db:
+    image: ankane/pgvector
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: app
+    volumes:
+      - postgres_db:/var/lib/postgresql/data
+    networks:
+      - global
+    ports:
+      - 55432:5432
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - global
+
+
+volumes:
+  postgres_db:
+
 
 networks:
   global:

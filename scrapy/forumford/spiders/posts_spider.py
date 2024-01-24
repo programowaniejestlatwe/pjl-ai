@@ -4,23 +4,23 @@ import json
 from bs4 import BeautifulSoup
 
 import scrapy
+from forumford.db import Db
+
+db = Db()
 
 class PostsSpider(scrapy.Spider):
     name = "posts"
 
     def start_requests(self):
 
-        # tymczasowo jeden wątek, wątki będą pobierane z bazy danych
-        threads = [
-            "showthread.php?t=334859"
-        ]
+        threads = db.select_threads()
 
         for thread in threads:
 
-            logging.info("Wątek:  %s", "https://forum.fordclubpolska.org/" + thread)
+            logging.info("Wątek:  %s", "https://forum.fordclubpolska.org/" + thread[4])
 
             yield scrapy.Request(
-                url="https://forum.fordclubpolska.org/" + thread,
+                url="https://forum.fordclubpolska.org/" + thread[4],
                 cookies= {
                     'bbsessionhash': 'XXXX',
                     'bbpassword': 'XXXX',
@@ -66,8 +66,15 @@ class PostsSpider(scrapy.Spider):
             # usuwa tekst "Bump: "
             content = content.replace("Bump: ", "")
 
-
             logging.info("Post ID: %s, treść: %s", numericId, content)
+
+            db.insert_post({
+                "id": numericId,
+                "thread_id": thread[0],
+                "content": content,
+                "model": "",
+                "engine": "",
+            })
 
 
         # pobieram linki do kolejnych podstron
