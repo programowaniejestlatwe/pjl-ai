@@ -3,7 +3,7 @@ import logging
 import json
 import scrapy
 
-from forumford.db import Db
+from forumford.shared.db import Db
 
 class ThreadsSpider(scrapy.Spider):
     # wymagane przez Scrapy

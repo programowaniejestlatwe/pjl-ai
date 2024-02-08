@@ -23,6 +23,9 @@ konkretnego modelu Forda. To repozytorium zawiera link tylko do jednego modelu. 
 przypisane do wszystkich modeli, musisz uzupełnić ten plik. Więcej o tym jak to zrobić znajdziesz tym
 filmie: [https://youtu.be/H46cg0sQMUk](https://youtu.be/H46cg0sQMUk)
 
+### Klucze do API
+Aplikacja korzysta z API od OpenAI. Żeby móc korzystać z API, musisz posiadać klucz. 
+Skopiuj plik `.env.template` do `.env` i uzupełnij go swoim kluczem.
 
 ## Uruchomienie
 

@@ -4,7 +4,7 @@ import json
 from bs4 import BeautifulSoup
 
 import scrapy
-from forumford.db import Db
+from forumford.shared.db import Db
 
 db = Db()
 

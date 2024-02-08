@@ -1,3 +1,5 @@
 scrapy/forumford/__pycache__
 scrapy/forumford/spiders/__pycache__
 .idea
+.env
+shared/__pycache__

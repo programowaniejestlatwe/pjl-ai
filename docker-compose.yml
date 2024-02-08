@@ -14,9 +14,7 @@ services:
 
     volumes:
       - ./scrapy:/usr/src/app
-
-    environment:
-      FOO: bar
+      - ./shared:/usr/src/app/forumford/shared
 
     networks:
       - global
@@ -24,6 +22,25 @@ services:
     ports:
       - 5001:5000
       - 4000:4000
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+
+    working_dir: /usr/src/app
+    restart: no
+    tty: true
+    stdin_open: true
+
+    volumes:
+      - ./backend:/usr/src/app
+      - ./shared:/usr/src/app/shared
+
+    env_file: .env
+
+    networks:
+      - global
 
   db:
     image: ankane/pgvector
