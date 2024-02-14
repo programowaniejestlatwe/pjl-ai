@@ -31,4 +31,10 @@ CREATE INDEX posts_thread_id_idx ON posts(thread_id);
 CREATE UNIQUE INDEX threads_source_id_unique_idx ON threads(source, external_thread_id);
 
 
-alter table posts add COLUMN is_meaningful BOOLEAN;
+ALTER TABLE posts ADD COLUMN is_meaningful BOOLEAN;
+
+
+
+ALTER TABLE posts ADD COLUMN is_solution_processed BOOLEAN DEFAULT false;
+ALTER TABLE posts ADD COLUMN solution TEXT DEFAULT NULL;
+ALTER TABLE posts ADD COLUMN part VARCHAR(128) DEFAULT NULL;
