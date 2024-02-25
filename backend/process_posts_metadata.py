@@ -72,12 +72,9 @@ summary_chain = load_summarize_chain(
 text_splitter = TokenTextSplitter(chunk_size=4000, chunk_overlap=0)
 
 def summarize_post(docs):
-
-
     split_docs = text_splitter.split_documents(
         text_splitter.create_documents(docs)
     )
-
     result = summary_chain({"input_documents": split_docs}, return_only_outputs=True)
 
     return result['output_text']
