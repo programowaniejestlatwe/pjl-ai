@@ -101,3 +101,29 @@ class Db(object):
             logging.error("Error executing query: %s", e)
 
         return
+
+
+    """Dodaje część do bazy danych.
+    """
+    def insert_part(self, part):
+
+        try:
+            with self.socket.cursor() as cursor:
+                cursor.execute(
+                    "INSERT INTO parts (create_time, model_version, engine_model, year, parent_category_path, category_name, url, parts) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
+                    (
+                        "NOW()",
+                        part['model_version'],
+                        part['engine_model'],
+                        part['year'],
+                        part['parent_category_path'],
+                        part['category_name'] ,
+                        part['url'],
+                        part['parts']
+                    )
+                )
+                self.socket.commit()
+        except Exception as e:
+            logging.error("Error inserting part: %s", e)
+
+        return

@@ -88,8 +88,7 @@ all_posts = db.query("""
     WHERE p.thread_id = t.id
     AND p.is_meaningful = true
     AND p.is_solution_processed is false
-    AND t.model = 'B-Max'
-    LIMIT 1
+    AND t.model = 'Mondeo'
     """)
 
 for post in all_posts:
