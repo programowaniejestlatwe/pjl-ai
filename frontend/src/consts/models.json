@@ -1,0 +1,330 @@
+[
+  {
+    "name": "B-Max",
+    "available": false
+  },
+  {
+    "name": "C-Max",
+    "available": false
+  },
+  {
+    "name": "Ecosport",
+    "available": false
+  },
+  {
+    "name": "Edge",
+    "available": false
+  },
+  {
+    "name": "Escort",
+    "available": false
+  },
+  {
+    "name": "Fiesta",
+    "available": false
+  },
+  {
+    "name": "Focus",
+    "available": false
+  },
+  {
+    "name": "Fusion",
+    "available": false
+  },
+  {
+    "name": "Galaxy",
+    "available": false
+  },
+  {
+    "name": "Grand C-Max",
+    "available": false
+  },
+  {
+    "name": "Ka",
+    "available": false
+  },
+  {
+    "name": "Kuga",
+    "available": false
+  },
+  {
+    "name": "Mondeo",
+    "available": true,
+    "versions": [
+      {
+        "name": "MK1 (1993-1996)",
+        "chassis": [
+          {
+            "name": "Kombi",
+            "engines": [
+              {
+                "fuel": "benzyna",
+                "motors": [
+                  "1.6 16V 65kW 88KM",
+                  "1.6 16V 66kW 90KM",
+                  "1.8 16V 82kW 112KM",
+                  "1.8 16V 85kW 115KM",
+                  "1.8 16V 4x4 85kW 115KM",
+                  "2.0 16V 100kW 136KM",
+                  "2.0 16V 97kW 132KM",
+                  "2.0 16V 4x4 100kW 136KM",
+                  "2.0 16V 4x4 97kW 132KM",
+                  "2.5 24V 125kW 170KM"
+                ]
+              },
+              {
+                "fuel": "diesel",
+                "motors": ["1.8 TD 65kW 88KM", "1.8 TD 66kW 90KM"]
+              }
+            ]
+          },
+          {
+            "name": "Hatchback",
+            "engines": [
+              {
+                "fuel": "benzyna",
+                "motors": [
+                  "1.6 16V 65kW 88KM",
+                  "1.6 16V 66kW 90KM",
+                  "1.8 16V 82kW 112KM",
+                  "1.8 16V 85kW 115KM",
+                  "1.8 16V 4x4 85kW 115KM",
+                  "2.0 16V 100kW 136KM",
+                  "2.0 16V 97kW 132KM",
+                  "2.0 16V 4x4 100kW 136KM",
+                  "2.0 16V 4x4 97kW 132KM",
+                  "2.5 24V 125kW 170KM"
+                ]
+              },
+              {
+                "fuel": "diesel",
+                "motors": ["1.8 TD 65kW 88KM", "1.8 TD 66kW 90KM"]
+              }
+            ]
+          },
+          {
+            "name": "Sedan",
+            "engines": [
+              {
+                "fuel": "benzyna",
+                "motors": [
+                  "1.6 16V 65kW 88KM",
+                  "1.6 16V 66kW 90KM",
+                  "1.8 16V 82kW 112KM",
+                  "1.8 16V 85kW 115KM",
+                  "1.8 16V 4x4 85kW 116KM",
+                  "2.0 16V 100kW 136KM",
+                  "2.0 16V 4x4 97kW 132KM",
+                  "2.0 16V 4x4 100kW 136KM",
+                  "2.5 24V 125kW 170KM"
+                ]
+              },
+              {
+                "fuel": "diesel",
+                "motors": ["1.8 TD 65kW 88KM", "1.8 TD 66kW 90KM"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MK2 (1996-2000)"
+      },
+      {
+        "name": "MK3 (2000-2007)"
+      },
+      {
+        "name": "MK4 (2007-2014)",
+        "chassis": [
+          {
+            "name": "Hatchback",
+            "engines": [
+              {
+                "fuel": "benzyna",
+                "motors": [
+                  "1.6 EcoBoost 118kW 160KM",
+                  "1.6 Ti 81kW 110KM",
+                  "1.6 Ti 88kW 120KM",
+                  "1.6 Ti 92kW 125KM",
+                  "2.0 EcoBoost 176kW 240KM",
+                  "2.0 SCTi 149kW 203KM",
+                  "2.3 118kW 160KM",
+                  "2.5 162kW 220KM"
+                ]
+              },
+              {
+                "fuel": "diesel",
+                "motors": [
+                  "1.6 TDCi 85kW 115KM",
+                  "1.8 TDCi 74kW 100KM",
+                  "1.8 TDCi 92kW 125KM",
+                  "2.0 TDCi 100kW 136KM",
+                  "2.0 TDCi 103kW 140KM",
+                  "2.0 TDCi 120kW 163KM",
+                  "2.0 TDCi 85kW 115KM",
+                  "2.0 TDCi 96kW 130KM",
+                  "2.2 TDCi 129kW 175KM",
+                  "2.2 TDCi 147kW 200KM"
+                ]
+              },
+              {
+                "fuel": "Benzyna/etanol",
+                "motors": ["2.0 Flexifuel 107kW 145KM"]
+              },
+              {
+                "fuel": "Benzyna/Gaz LPG",
+                "motors": ["2.0 LPG 107kW 145KM"]
+              }
+            ]
+          },
+          {
+            "name": "Sedan",
+            "engines": [
+              {
+                "fuel": "benzyna",
+                "motors": [
+                  "1.6 EcoBoost 118kW 160KM",
+                  "1.6 Ti 81kW 110KM",
+                  "1.6 Ti 88kW 120KM",
+                  "1.6 Ti 92kW 125KM",
+                  "2.0 107kW 145KM",
+                  "2.0 EcoBoost 176kW 240KM",
+                  "2.0 SCTi 149kW 203KM",
+                  "2.3 118kW 160KM",
+                  "2.5 162kW 220KM"
+                ]
+              },
+              {
+                "fuel": "diesel",
+                "motors": [
+                  "1.6 TDCi 85kW 115KM",
+                  "1.8 TDCi 74kW 100KM",
+                  "1.8 TDCi 92kW 125KM",
+                  "2.0 TDCi 100kW 136KM",
+                  "2.0 TDCi 103kW 140KM",
+                  "2.0 TDCi 120kW 163KM",
+                  "2.0 TDCi 85kW 115KM",
+                  "2.0 TDCi 96kW 130KM",
+                  "2.2 TDCi 129kW 175KM",
+                  "2.2 TDCi 147kW 200KM"
+                ]
+              },
+              {
+                "fuel": "Benzyna/etanol",
+                "motors": ["2.0 Flexifuel 107kW 145KM"]
+              },
+              {
+                "fuel": "Benzyna/Gaz LPG",
+                "motors": ["2.0 LPG 107kW 145KM"]
+              }
+            ]
+          },
+          {
+            "name": "Kombi",
+            "engines": [
+              {
+                "fuel": "benzyna",
+                "motors": [
+                  "1.6 EcoBoost 118kW 160KM",
+                  "1.6 Ti 81kW 110KM",
+                  "1.6 Ti 88kW 120KM",
+                  "1.6 Ti 92kW 125KM",
+                  "2.0 107kW 145KM",
+                  "2.0 EcoBoost 176kW 240KM",
+                  "2.0 SCTi 149kW 203KM",
+                  "2.3 118kW 160KM",
+                  "2.5 162kW 220KM"
+                ]
+              },
+              {
+                "fuel": "diesel",
+                "motors": [
+                  "1.6 TDCi 85kW 115KM",
+                  "1.8 TDCi 74kW 100KM",
+                  "1.8 TDCi 92kW 125KM",
+                  "2.0 TDCi 100kW 136KM",
+                  "2.0 TDCi 103kW 140KM",
+                  "2.0 TDCi 120kW 163KM",
+                  "2.0 TDCi 85kW 115KM",
+                  "2.0 TDCi 96kW 130KM",
+                  "2.2 TDCi 129kW 175KM",
+                  "2.2 TDCi 147kW 200KM"
+                ]
+              },
+              {
+                "fuel": "Benzyna/etanol",
+                "motors": ["2.0 Flexifuel 107kW 145KM"]
+              },
+              {
+                "fuel": "Benzyna/Gaz LPG",
+                "motors": ["2.0 LPG 107kW 145KM"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MK5 (2014-2020)",
+        "chassis": [
+          {
+            "name": "Hatchback",
+            "engines": [
+              {
+                "fuel": "benzyna",
+                "motors": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mustang",
+    "available": false
+  },
+  {
+    "name": "Puma",
+    "available": false
+  },
+  {
+    "name": "Ranger",
+    "available": false
+  },
+  {
+    "name": "S-Max",
+    "available": false
+  },
+  {
+    "name": "Tourneo Connect",
+    "available": false
+  },
+  {
+    "name": "Tourneo Courier",
+    "available": false
+  },
+  {
+    "name": "Tourneo Custom",
+    "available": false
+  },
+  {
+    "name": "Transit",
+    "available": false
+  },
+  {
+    "name": "Transit Connect",
+    "available": false
+  },
+  {
+    "name": "Transit Courier",
+    "available": false
+  },
+  {
+    "name": "Transit Custom",
+    "available": false
+  },
+  {
+    "name": "Transit/Tourneo Custom",
+    "available": false
+  }
+]

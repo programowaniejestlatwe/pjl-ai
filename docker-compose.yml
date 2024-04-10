@@ -42,6 +42,25 @@ services:
       - global
     ports:
       - 5001:5000
+
+  frontend:
+    image: node:18
+    working_dir:  /home/node/app
+    restart: no
+    tty: true
+    stdin_open: true
+
+    volumes:
+      - ./frontend:/home/node/app
+
+    env_file: .env
+
+    networks:
+      - global
+    ports:
+      - 3000:3000
+
+
   db:
     image: ankane/pgvector
     restart: always
