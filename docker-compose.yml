@@ -20,7 +20,6 @@ services:
       - global
 
     ports:
-      - 5001:5000
       - 4000:4000
 
   backend:
@@ -41,7 +40,8 @@ services:
 
     networks:
       - global
-
+    ports:
+      - 5001:5000
   db:
     image: ankane/pgvector
     restart: always

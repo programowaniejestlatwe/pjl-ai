@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "13a7b905-5597-4fba-bfa7-f35a00b9d754",
+		"name": "FixCar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30116402"
+	},
+	"item": [
+		{
+			"name": "symptoms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"prompt\": \"Silnik poszarpuje, dławi się przy jeździe ze stałą prędkością. Bieg nie ma znaczenia. Dzieje się to w okolicy 2000 obrotów na minutę.\",\n    \"model\": \"Mondeo\",\n    \"model_version\": \"MK4\",\n    \"chassis\": \"Kombi\",\n    \"engine_type\": \"2.2 TDCi 129kW 175KM\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5001/api/diagnose",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"diagnose"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "parts summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/api/parts_summary/184",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"parts_summary",
+						"184"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "solutions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/api/solutions/184/390",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"solutions",
+						"184",
+						"390"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "parts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/api/parts/390",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"parts",
+						"390"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "solution summary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"problem_description\": \"Silnik poszarpuje, dławi się przy jeździe ze stałą prędkością. Bieg nie ma znaczenia. Dzieje się to w okolicy 2000 obrotów na minutę.\",\n    \"model_summary\": \"Mondeo MK4 (2007-2014) Kombi diesel 2.2 TDCi 129kW 175KM\",\n    \"diagnostics_summary\": \"Szarpanie podczas równej prędkości. Układ wydechowy. Zawór EGR.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5001/api/solution_summary",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"solution_summary"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
